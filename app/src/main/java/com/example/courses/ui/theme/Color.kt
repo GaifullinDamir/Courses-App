@@ -13,9 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id("com.android.application") version "8.0.2" apply false
-    id("com.android.library") version "8.0.0" apply false
-    id("org.jetbrains.kotlin.android") version "1.8.21" apply false
-}
+package com.example.courses.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val primary_dark = Color(0xFFD0BCFF)
+val secondary_dark = Color(0xFFCCC2DC)
+val tertiary_dark = Color(0xFFEFB8C8)
+
+val primary_light = Color(0xFF6650a4)
+val secondary_light = Color(0xFF625b71)
+val tertiary_light = Color(0xFF7D5260)

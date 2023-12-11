@@ -13,9 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id("com.android.application") version "8.0.2" apply false
-    id("com.android.library") version "8.0.0" apply false
-    id("org.jetbrains.kotlin.android") version "1.8.21" apply false
-}
+package com.example.courses.model
+
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Topic(
+    @StringRes val name: Int,
+    val availableCourses: Int,
+    @DrawableRes val imageRes: Int
+)
